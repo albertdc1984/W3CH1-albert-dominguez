@@ -14,3 +14,5 @@ class Asesor extends Personaje {
     return `${super.comunicar()}No sé por qué, pero creo que voy a morir pronto`;
   }
 }
+
+export default Asesor;

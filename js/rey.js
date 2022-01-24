@@ -12,3 +12,5 @@ class Rey extends Personaje {
     return `${super.comunicar()}Vais a morir todos`;
   }
 }
+
+export default Rey;

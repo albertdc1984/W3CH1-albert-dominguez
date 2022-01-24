@@ -31,3 +31,5 @@ class Luchador extends Personaje {
     return `${super.comunicar()}Primero pego y luego pregunto`;
   }
 }
+
+export default Luchador;
