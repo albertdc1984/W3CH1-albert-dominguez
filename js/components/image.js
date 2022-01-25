@@ -9,7 +9,7 @@ class ImugClass extends Card {
   }
 
   generateSrc(source) {
-    this.element.innerHTML = source;
+    this.element.src = source;
   }
 }
 
