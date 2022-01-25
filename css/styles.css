@@ -2,15 +2,15 @@ body {
   background-color: #b9540c;
   overflow: hidden;
 }
+.card-body {
+}
 .characters-list {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   max-width: 100%;
   min-height: 100vh;
   align-items: center;
 }
 .character {
-  width: 20%;
-  flex-basis: auto;
   flex-grow: 0;
 }
 .character__name {

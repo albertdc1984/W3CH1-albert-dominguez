@@ -1,11 +1,16 @@
-import Card from "card.js";
+import Card from "./card.js";
 
-class Image extends Card {
-  constructor(parentElement, className, fotoSRC) {
-    super(parentElement, "image", "img");
+class ImugClass extends Card {
+  constructor(source) {
+    const pater = document.querySelector(".card");
 
-    this.element.innerHTML = `<img src=${fotoSRC}>`;
+    super(pater, ".character__picture", "img");
+    this.generateSrc(source);
+  }
+
+  generateSrc(source) {
+    this.element.innerHTML = source;
   }
 }
 
-export default Image;
+export default ImugClass;
