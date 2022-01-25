@@ -1,10 +1,12 @@
 import Card from "card.js";
 
 class Image extends Card {
-  constructor(parentElement, className, fotoSRC) {
-    super(parentElement, "image", "img");
+  parentElement = document.querySelector(".character__card");
 
-    this.element.innerHTML = `<img src=${fotoSRC}>`;
+  constructor(parentElement, className, image) {
+    super(parentElement, "character__picture card-img-top", "img");
+    parentElement.append(this.element);
+    this.element.src = image;
   }
 }
 

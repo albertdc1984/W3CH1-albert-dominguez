@@ -36,8 +36,11 @@ const bronn = new Escudero(
   0,
   jaime
 );
-
+const bronnImg = bronn.foto;
 const cardContainer = document.querySelector("ul");
-console.log(bronn.foto);
-const bronnCard = new Card(cardContainer, "character col", bronn);
-const bronnImage = new Image(cardContainer, "img/bronn.jpg");
+
+const bronnCard = new Card(cardContainer, "character col", bronnImg);
+const jaimeCard = new Card(cardContainer, "character col", bronn);
+const daenerysCard = new Card(cardContainer, "character col", bronn);
+const tyrionCard = new Card(cardContainer, "character col", bronn);
+const joffreyCard = new Card(cardContainer, "character col", bronn);
