@@ -7,12 +7,15 @@ class Personaje {
 
   vivo = true;
 
-  serie = "Juego de Tronos";
+  foto;
 
-  constructor(nombrePersonaje, familiaPersonaje, edadPersonaje) {
+  static serie = "Juego de Tronos";
+
+  constructor(nombrePersonaje, familiaPersonaje, edadPersonaje, fotoPersonaje) {
     this.nombre = nombrePersonaje;
     this.familia = familiaPersonaje;
     this.edad = edadPersonaje;
+    this.foto = fotoPersonaje;
   }
 
   comunicar() {
