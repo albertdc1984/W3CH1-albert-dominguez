@@ -1,3 +1,4 @@
+import Card from "./components/card.js";
 import Rey from "./rey.js";
 import Luchador from "./luchador.js";
 import Escudero from "./escudero.js";
@@ -35,3 +36,8 @@ const bronn = new Escudero(
   0,
   jaime
 );
+
+const cardContainer = document.querySelector("ul");
+console.log(bronn.foto);
+const bronnCard = new Card(cardContainer, "character col", bronn);
+const bronnImage = new Image(cardContainer, "img/bronn.jpg");
