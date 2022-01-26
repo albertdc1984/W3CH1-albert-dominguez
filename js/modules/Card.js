@@ -1,20 +1,16 @@
-import Component from "./component.js";
+import Component from "./Component.js";
+import Images from "./Image.js";
 
 class Card extends Component {
   constructor(parentElement, className, source) {
-    super(parentElement, className, "li", source);
+    super(parentElement, className, "div");
 
     this.generateHTML();
+    this.image = new Images(this.element, source);
   }
 
   generateHTML() {
-    this.element.innerHTML = ` <div class="card character__card">
-            <img
-              src="img/bronn.jpg"
-              alt="Nombre y familia del personaje"
-              class="character__picture card-img-top"
-            />
-            <div class="card-body">
+    this.element.innerHTML = `<div class="card-body">
               <h2 class="character__name card-title h4">Nombre y familia</h2>
               <div class="character__info">
                 <ul class="list-unstyled">
@@ -42,7 +38,8 @@ class Card extends Component {
               </div>
             </div>
             <i class="emoji"></i>
-          </div>`;
+         
+    `;
   }
 }
 
